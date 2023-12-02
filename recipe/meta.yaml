@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
   sha256: 23467fabe11c6f5a0746ba0b88f44df3e1c7532be792c082b5ca9cb6e86c2565
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
   entry_points:
@@ -37,7 +37,7 @@ test:
   #   - pip
 
 about:
-  home: https://github.com/nghia-vo/broh5
+  home: https://github.com/algotom/broh5
   license: Apache-2.0
   license_file: LICENSE
   summary: Browser-based GUI HDF Viewer in Python
@@ -45,3 +45,5 @@ about:
 extra:
   recipe-maintainers:
     - algotom
+    - nghia-vo
+    
