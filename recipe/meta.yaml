@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
   sha256: 23467fabe11c6f5a0746ba0b88f44df3e1c7532be792c082b5ca9cb6e86c2565
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
   entry_points:
