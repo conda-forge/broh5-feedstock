@@ -3,11 +3,13 @@ About broh5-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/broh5-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/nghia-vo/broh5
+Home: https://github.com/algotom/broh5
 
 Package license: Apache-2.0
 
 Summary: Browser-based GUI HDF Viewer in Python
+
+Documentation: https://broh5.readthedocs.io/
 
 Current build status
 ====================
@@ -143,5 +145,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@algotom](https://github.com/algotom/)
+* [@nghia-vo](https://github.com/nghia-vo/)
 
