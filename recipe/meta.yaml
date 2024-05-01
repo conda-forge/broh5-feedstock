@@ -16,7 +16,7 @@ build:
     - broh5 = broh5.main:main
 
 requirements:
-  host:    
+  host:
     - python >=3.8
     - pip
   run:
@@ -46,4 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - nghia-vo
-    
+
