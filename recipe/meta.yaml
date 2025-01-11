@@ -6,10 +6,10 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
   sha256: edf195f7fcb5ca0040f517bc31d0500c1aec400d9d84c0164e0bf026bee356cd
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
   entry_points:
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >1.21
     - h5py >3.7
     - hdf5plugin
@@ -29,6 +29,8 @@ requirements:
     - nicegui >=1.4.21
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - broh5
   # commands:
