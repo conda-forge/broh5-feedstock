@@ -1,5 +1,5 @@
 {% set name = "broh5" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
-  sha256: 3cab3796367bee6f814b02625c364542cd6dbf2f5cd345e474d75360bd166251
+  sha256: 9aaa8dc037dc36a178cf7eae445be26194cebd8e64de5376aa686a421f52d3e1
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -27,7 +27,7 @@ requirements:
     - hdf5plugin
     - pillow
     - matplotlib-base
-    - nicegui >=2.0
+    - nicegui >=2.14
 
 test:
   requires:
