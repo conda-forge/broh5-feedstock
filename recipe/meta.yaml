@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<3.14
     - numpy >1.23
     - h5py >3.7
     - hdf5plugin
