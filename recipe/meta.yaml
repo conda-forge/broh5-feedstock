@@ -1,5 +1,5 @@
 {% set name = "broh5" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/broh5-{{ version }}.tar.gz
-  sha256: 9aaa8dc037dc36a178cf7eae445be26194cebd8e64de5376aa686a421f52d3e1
+  sha256: 91cfe824b7720a2b709ac88eab227e5e9c0c81df1124d004699481b15b2003a4
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
